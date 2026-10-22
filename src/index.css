@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-cinzel: 'Cinzel', Georgia, serif;
+  --font-editorial: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --color-gold-metallic: #C6A15B;
+  --color-gold-light: #E2CC96;
+  --color-gold-dark: #8E6F33;
+  --color-obsidian-deep: #050505;
+  --color-graphite: #171717;
+  --color-marfim: #F3F0E9;
+  --color-cream: #F3F0E9;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #050505;
+}
+
+/* Custom Luxury Gradients & Textures */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #F3F0E9 0%, #E2CC96 40%, #C6A15B 75%, #9B7735 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.luxury-noise {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 0);
+  background-size: 28px 28px;
+}
+
+.luxury-noise-ivory {
+  background-image: radial-gradient(rgba(23, 23, 23, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom Luxury Gradients & Textures */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #F5F3EE 0%, #E4CB91 35%, #C6A15B 70%, #9B7735 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, rgba(198, 161, 91, 0.5), rgba(228, 203, 145, 0.8), rgba(198, 161, 91, 0.2)) 1;
+}
+
+.gold-subtle-glow {
+  box-shadow: 0 0 45px -10px rgba(198, 161, 91, 0.15);
+}
+
+.luxury-noise {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Print Styles for Flawless 16:9 PDF Export via Browser Print */
+@media print {
+  @page {
+    size: 1920px 1080px;
+    margin: 0;
+  }
+  
+  body {
+    background-color: #080808 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  .slide-container-print {
+    page-break-after: always;
+    break-after: page;
+    width: 1920px !important;
+    height: 1080px !important;
+    min-height: 1080px !important;
+    max-height: 1080px !important;
+    overflow: hidden !important;
+    position: relative !important;
+  }
+}

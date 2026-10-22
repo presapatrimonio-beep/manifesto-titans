@@ -1,0 +1,6 @@
+{
+  "name": "Titans Society — Experiência Editorial Imersiva",
+  "description": "Publicação editorial digital contínua, imersiva e autoral da Titans Society, unindo o Manifesto e o Guia de Vantagens em direção de arte de luxo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
