@@ -26,8 +26,8 @@ export const OfficialLogo: React.FC<OfficialLogoProps> = ({
     <div className={`flex flex-col items-center justify-center ${className}`}>
       {!imageError ? (
         <img
-          src="/assets/aistudio/logo_ace19eb8.png"
-          alt="Titans Society — Official Crest"
+          src="/assets/aistudio/logo2_5cea7939.png"
+          alt="Titans Society Business World — Official Crest"
           className={`${heightClasses} w-auto object-contain drop-shadow-[0_10px_25px_rgba(198,161,91,0.25)] select-none transition-transform duration-500`}
           referrerPolicy="no-referrer"
           onError={() => setImageError(true)}
